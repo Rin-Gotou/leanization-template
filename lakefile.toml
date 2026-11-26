@@ -1,0 +1,9 @@
+name = "leanization_template"
+version = "0.1.0"
+defaultTargets = ["PaperProject"]
+
+[leanOptions]
+relaxedAutoImplicit = false
+
+[[lean_lib]]
+name = "PaperProject"

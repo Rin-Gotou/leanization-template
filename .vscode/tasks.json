@@ -1,0 +1,68 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build paper",
+      "type": "process",
+      "command": "node",
+      "args": [
+        "${workspaceFolder}/tools/build-paper.mjs",
+        "paper"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Build Lean",
+      "type": "process",
+      "command": "lake",
+      "args": [
+        "build"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build comparison",
+      "type": "process",
+      "command": "node",
+      "args": [
+        "${workspaceFolder}/tools/build-paper.mjs",
+        "diff"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Check paper",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Build paper",
+        "Build comparison"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Advance paper revision",
+      "type": "process",
+      "command": "node",
+      "args": [
+        "${workspaceFolder}/tools/advance-revision.mjs"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Create annotation copy",
+      "type": "process",
+      "command": "node",
+      "args": [
+        "${workspaceFolder}/tools/create-annotation-copy.mjs"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

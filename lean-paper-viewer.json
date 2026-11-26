@@ -1,0 +1,33 @@
+{
+  "$schema": "./lean-paper-viewer.schema.json",
+  "paper": {
+    "title": "Leanization Template",
+    "pdf": "build/paper/main_2.pdf"
+  },
+  "links": [
+    {
+      "id": "def:twice",
+      "label": "Definition: twice",
+      "lean": {
+        "declaration": "PaperProject.twice",
+        "file": "PaperProject/Definitions.lean"
+      },
+      "review": {
+        "status": "proposed",
+        "note": "テンプレートのサンプル対応。人間による数学的対応の確認は未実施。"
+      }
+    },
+    {
+      "id": "thm:twice-eq-add-self",
+      "label": "Theorem: expansion",
+      "lean": {
+        "declaration": "PaperProject.twice_eq_add_self",
+        "file": "PaperProject/MainTheorems.lean"
+      },
+      "review": {
+        "status": "proposed",
+        "note": "テンプレートのサンプル対応。人間による数学的対応の確認は未実施。"
+      }
+    }
+  ]
+}

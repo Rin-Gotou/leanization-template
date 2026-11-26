@@ -1,0 +1,45 @@
+{
+  "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/build/paper",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "project-paper",
+      "command": "node",
+      "args": [
+        "%WORKSPACE_FOLDER%/tools/build-paper.mjs",
+        "paper"
+      ]
+    },
+    {
+      "name": "project-diff",
+      "command": "node",
+      "args": [
+        "%WORKSPACE_FOLDER%/tools/build-paper.mjs",
+        "diff"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "Paper and comparison",
+      "tools": [
+        "project-paper",
+        "project-diff"
+      ]
+    },
+    {
+      "name": "Paper only",
+      "tools": [
+        "project-paper"
+      ]
+    }
+  ],
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/lean-paper-viewer.json"
+      ],
+      "url": "./lean-paper-viewer.schema.json"
+    }
+  ]
+}

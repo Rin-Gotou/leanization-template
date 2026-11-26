@@ -1,0 +1,23 @@
+\documentclass{article}
+\input{preamble}
+\input{filewise_preamble}
+\title{A Sample Paper for Leanization}
+\author{Your Name}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+This sample demonstrates the correspondence between a mathematical paper
+and a Lean formalization. Replace it with your own manuscript.
+\end{abstract}
+\section{Definitions and a first result}
+\begin{definition}[\leanlink{def:twice}{Twice}]\label{def:twice}
+For a natural number $n$, define $\operatorname{twice}(n)=n+n$.
+\end{definition}
+\begin{theorem}[\leanlink{thm:twice-eq-add-self}{Expansion}]\label{thm:expansion}
+For every natural number $n$, we have $\operatorname{twice}(n)=n+n$.
+\end{theorem}
+\begin{proof}
+This follows immediately from Definition~\ref{def:twice}.
+\end{proof}
+\end{document}

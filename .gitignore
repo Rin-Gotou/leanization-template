@@ -1,0 +1,7 @@
+/build/
+/.lake/
+/node_modules/
+.DS_Store
+
+# Local persistent Codex session pointer and execution lock
+/.paper-buttons/
