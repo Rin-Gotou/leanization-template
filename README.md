@@ -107,6 +107,7 @@ Viewer参照先・案内文を更新します。過去の基準稿は残しま�
 - `reviews/`: 指摘・対応記録・保持する注釈PDF
 - `prompts/`, `AGENTS.md`: Codexの作業手順
 - `tools/`, `.vscode/`: ビルド・検証・エディタ設定
+- `docs/ci/lean.yml`: 任意で利用できるCI設定サンプル（未有効）
 - `build/`, `.lake/`: Git管理外の生成物
 
 派生元と変更範囲は `docs/PROVENANCE.md` に記載しています。
@@ -119,3 +120,7 @@ Viewer参照先・案内文を更新します。過去の基準稿は残しま�
 所有者がSettingsの「Template repository」を有効にすると、
 GitHubの「Use this template」からも新しいリポジトリを作成できます。
 ローカルでの利用を想定しています。検証は手元で `npm run check` を実行します。
+
+CI設定サンプルは `docs/ci/lean.yml` に保存しています。
+ローカル利用では設定不要です。必要になった場合だけ
+`.github/workflows/lean.yml` にコピーして利用できます。
