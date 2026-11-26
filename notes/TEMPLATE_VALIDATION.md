@@ -9,6 +9,7 @@
   新版のPDF・リンク検査の成功を確認。配布用テンプレートの版は変更していない。
 - 一時コピーで注釈PDFを2回作り、別名で保存されることを確認。
 - 版上げ先ファイルが既存の場合、原稿・版設定・基準を変更せず拒否することを確認。
-- VS Code実機のPDF表示・SyncTeX・Lean Language Server、GitHub上のCIは未有効（docs/ci/lean.ymlに導入用サンプル）。
+- VS Code実機のPDF表示・SyncTeX・Lean Language Serverは未確認。
+- ローカル利用を前提とし、CI設定は含めない。
 
 利用者の論文の形式化・数学的対応のレビューを検証したものではない。

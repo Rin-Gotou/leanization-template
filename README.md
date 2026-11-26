@@ -107,7 +107,6 @@ Viewer参照先・案内文を更新します。過去の基準稿は残しま�
 - `reviews/`: 指摘・対応記録・保持する注釈PDF
 - `prompts/`, `AGENTS.md`: Codexの作業手順
 - `tools/`, `.vscode/`: ビルド・検証・エディタ設定
-- `docs/ci/lean.yml`: LeanビルドCIの導入用サンプル
 - `build/`, `.lake/`: Git管理外の生成物
 
 派生元と変更範囲は `docs/PROVENANCE.md` に記載しています。
@@ -119,6 +118,4 @@ Viewer参照先・案内文を更新します。過去の基準稿は残しま�
 現在は通常の公開リポジトリです。cloneまたはZIPのダウンロードで利用できます。
 所有者がSettingsの「Template repository」を有効にすると、
 GitHubの「Use this template」からも新しいリポジトリを作成できます。
-CIを有効にするには `docs/ci/lean.yml` を `.github/workflows/lean.yml` へ
-コピーしてコミットしてください。Webエディタ、またはワークフローを書き込める
-認証を使用します。配布時点ではGitHub ActionsのCIは未有効です。
+ローカルでの利用を想定しています。検証は手元で `npm run check` を実行します。
