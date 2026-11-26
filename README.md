@@ -116,7 +116,9 @@ Viewer参照先・案内文を更新します。過去の基準稿は残しま�
 
 公開先: https://github.com/Rin-Gotou/leanization-template
 
-GitHubの「Use this template」から自分のリポジトリを作成できます。
+現在は通常の公開リポジトリです。cloneまたはZIPのダウンロードで利用できます。
+所有者がSettingsの「Template repository」を有効にすると、
+GitHubの「Use this template」からも新しいリポジトリを作成できます。
 CIを有効にするには `docs/ci/lean.yml` を `.github/workflows/lean.yml` へ
 コピーしてコミットしてください。Webエディタ、またはワークフローを書き込める
 認証を使用します。配布時点ではGitHub ActionsのCIは未有効です。
